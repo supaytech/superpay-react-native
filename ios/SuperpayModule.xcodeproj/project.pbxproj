@@ -1,0 +1,392 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F938EC93212E71F300F72153 /* SuperpayModule.m in Sources */ = {isa = PBXBuildFile; fileRef = F938EC92212E71F300F72153 /* SuperpayModule.m */; };
+		F938EC94212E71F300F72153 /* SuperpayModule.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F938EC91212E71F300F72153 /* SuperpayModule.h */; };
+		F938ECAC212E727F00F72153 /* libspsdkpaycore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F938EC9C212E727F00F72153 /* libspsdkpaycore.a */; };
+		F938ECAD212E727F00F72153 /* libspsdkpay+alipay.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F938ECA1212E727F00F72153 /* libspsdkpay+alipay.a */; };
+		F938ECAE212E727F00F72153 /* AlipaySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F938ECA2212E727F00F72153 /* AlipaySDK.framework */; };
+		F938ECAF212E727F00F72153 /* libspsdkpay+wechat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F938ECA5212E727F00F72153 /* libspsdkpay+wechat.a */; };
+		F938ECB0212E727F00F72153 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F938ECA7212E727F00F72153 /* libWeChatSDK.a */; };
+		F938ECB1212E727F00F72153 /* libspsdkpay+unionpay.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F938ECAA212E727F00F72153 /* libspsdkpay+unionpay.a */; };
+		F938ECB2212E727F00F72153 /* libPaymentControl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F938ECAB212E727F00F72153 /* libPaymentControl.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F938EC8C212E71F300F72153 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				F938EC94212E71F300F72153 /* SuperpayModule.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F938EC8E212E71F300F72153 /* libSuperpayModule.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSuperpayModule.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F938EC91212E71F300F72153 /* SuperpayModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuperpayModule.h; sourceTree = "<group>"; };
+		F938EC92212E71F300F72153 /* SuperpayModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperpayModule.m; sourceTree = "<group>"; };
+		F938EC9B212E727F00F72153 /* SPSDKPay.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SPSDKPay.bundle; sourceTree = "<group>"; };
+		F938EC9C212E727F00F72153 /* libspsdkpaycore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libspsdkpaycore.a; sourceTree = "<group>"; };
+		F938EC9D212E727F00F72153 /* SPSDKPay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPSDKPay.h; sourceTree = "<group>"; };
+		F938ECA0212E727F00F72153 /* AlipaySDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AlipaySDK.bundle; sourceTree = "<group>"; };
+		F938ECA1212E727F00F72153 /* libspsdkpay+alipay.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libspsdkpay+alipay.a"; sourceTree = "<group>"; };
+		F938ECA2212E727F00F72153 /* AlipaySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlipaySDK.framework; sourceTree = "<group>"; };
+		F938ECA4212E727F00F72153 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		F938ECA5212E727F00F72153 /* libspsdkpay+wechat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libspsdkpay+wechat.a"; sourceTree = "<group>"; };
+		F938ECA6212E727F00F72153 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		F938ECA7212E727F00F72153 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		F938ECA9212E727F00F72153 /* UPPaymentControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UPPaymentControl.h; sourceTree = "<group>"; };
+		F938ECAA212E727F00F72153 /* libspsdkpay+unionpay.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libspsdkpay+unionpay.a"; sourceTree = "<group>"; };
+		F938ECAB212E727F00F72153 /* libPaymentControl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPaymentControl.a; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F938EC8B212E71F300F72153 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F938ECAF212E727F00F72153 /* libspsdkpay+wechat.a in Frameworks */,
+				F938ECB2212E727F00F72153 /* libPaymentControl.a in Frameworks */,
+				F938ECB1212E727F00F72153 /* libspsdkpay+unionpay.a in Frameworks */,
+				F938ECAD212E727F00F72153 /* libspsdkpay+alipay.a in Frameworks */,
+				F938ECAC212E727F00F72153 /* libspsdkpaycore.a in Frameworks */,
+				F938ECAE212E727F00F72153 /* AlipaySDK.framework in Frameworks */,
+				F938ECB0212E727F00F72153 /* libWeChatSDK.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F938EC85212E71F300F72153 = {
+			isa = PBXGroup;
+			children = (
+				F938EC90212E71F300F72153 /* SuperpayModule */,
+				F938EC8F212E71F300F72153 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F938EC8F212E71F300F72153 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F938EC8E212E71F300F72153 /* libSuperpayModule.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F938EC90212E71F300F72153 /* SuperpayModule */ = {
+			isa = PBXGroup;
+			children = (
+				F938EC9A212E727F00F72153 /* lib */,
+				F938EC91212E71F300F72153 /* SuperpayModule.h */,
+				F938EC92212E71F300F72153 /* SuperpayModule.m */,
+			);
+			path = SuperpayModule;
+			sourceTree = "<group>";
+		};
+		F938EC9A212E727F00F72153 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				F938EC9B212E727F00F72153 /* SPSDKPay.bundle */,
+				F938EC9C212E727F00F72153 /* libspsdkpaycore.a */,
+				F938EC9D212E727F00F72153 /* SPSDKPay.h */,
+				F938EC9E212E727F00F72153 /* Channels */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		F938EC9E212E727F00F72153 /* Channels */ = {
+			isa = PBXGroup;
+			children = (
+				F938EC9F212E727F00F72153 /* Alipay */,
+				F938ECA3212E727F00F72153 /* Wx */,
+				F938ECA8212E727F00F72153 /* UnionPay */,
+			);
+			path = Channels;
+			sourceTree = "<group>";
+		};
+		F938EC9F212E727F00F72153 /* Alipay */ = {
+			isa = PBXGroup;
+			children = (
+				F938ECA0212E727F00F72153 /* AlipaySDK.bundle */,
+				F938ECA1212E727F00F72153 /* libspsdkpay+alipay.a */,
+				F938ECA2212E727F00F72153 /* AlipaySDK.framework */,
+			);
+			path = Alipay;
+			sourceTree = "<group>";
+		};
+		F938ECA3212E727F00F72153 /* Wx */ = {
+			isa = PBXGroup;
+			children = (
+				F938ECA4212E727F00F72153 /* WXApi.h */,
+				F938ECA5212E727F00F72153 /* libspsdkpay+wechat.a */,
+				F938ECA6212E727F00F72153 /* WXApiObject.h */,
+				F938ECA7212E727F00F72153 /* libWeChatSDK.a */,
+			);
+			path = Wx;
+			sourceTree = "<group>";
+		};
+		F938ECA8212E727F00F72153 /* UnionPay */ = {
+			isa = PBXGroup;
+			children = (
+				F938ECA9212E727F00F72153 /* UPPaymentControl.h */,
+				F938ECAA212E727F00F72153 /* libspsdkpay+unionpay.a */,
+				F938ECAB212E727F00F72153 /* libPaymentControl.a */,
+			);
+			path = UnionPay;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F938EC8D212E71F300F72153 /* SuperpayModule */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F938EC97212E71F300F72153 /* Build configuration list for PBXNativeTarget "SuperpayModule" */;
+			buildPhases = (
+				F938EC8A212E71F300F72153 /* Sources */,
+				F938EC8B212E71F300F72153 /* Frameworks */,
+				F938EC8C212E71F300F72153 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SuperpayModule;
+			productName = SuperpayModule;
+			productReference = F938EC8E212E71F300F72153 /* libSuperpayModule.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F938EC86212E71F300F72153 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = super;
+				TargetAttributes = {
+					F938EC8D212E71F300F72153 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = F938EC89212E71F300F72153 /* Build configuration list for PBXProject "SuperpayModule" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F938EC85212E71F300F72153;
+			productRefGroup = F938EC8F212E71F300F72153 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F938EC8D212E71F300F72153 /* SuperpayModule */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F938EC8A212E71F300F72153 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F938EC93212E71F300F72153 /* SuperpayModule.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F938EC95212E71F300F72153 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F938EC96212E71F300F72153 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F938EC98212E71F300F72153 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3NM6E5AZJ3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SuperpayModule/lib/Channels/Alipay",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SuperpayModule/lib",
+					"$(PROJECT_DIR)/SuperpayModule/lib/Channels/Alipay",
+					"$(PROJECT_DIR)/SuperpayModule/lib/Channels/Wx",
+					"$(PROJECT_DIR)/SuperpayModule/lib/Channels/UnionPay",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F938EC99212E71F300F72153 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3NM6E5AZJ3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SuperpayModule/lib/Channels/Alipay",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SuperpayModule/lib",
+					"$(PROJECT_DIR)/SuperpayModule/lib/Channels/Alipay",
+					"$(PROJECT_DIR)/SuperpayModule/lib/Channels/Wx",
+					"$(PROJECT_DIR)/SuperpayModule/lib/Channels/UnionPay",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F938EC89212E71F300F72153 /* Build configuration list for PBXProject "SuperpayModule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F938EC95212E71F300F72153 /* Debug */,
+				F938EC96212E71F300F72153 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F938EC97212E71F300F72153 /* Build configuration list for PBXNativeTarget "SuperpayModule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F938EC98212E71F300F72153 /* Debug */,
+				F938EC99212E71F300F72153 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F938EC86212E71F300F72153 /* Project object */;
+}
