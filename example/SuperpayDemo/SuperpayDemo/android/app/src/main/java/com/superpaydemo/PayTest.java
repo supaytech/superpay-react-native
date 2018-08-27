@@ -64,17 +64,6 @@ public class PayTest extends ReactContextBaseJavaModule {
                 Toast.makeText(getCurrentActivity(), "支付失败 " + payWay.toString() + errCode, Toast.LENGTH_LONG).show();
             }
         });
-
-
-
-
-
-
-
-
-
-
-
     }
 
 
